@@ -11,13 +11,13 @@ obj/rpcrawtransaction.o: rpcrawtransaction.cpp base58.h bignum.h \
  zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h \
  zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h \
  zerocoin/../uint256.h zerocoin/ParamGeneration.h \
- /home/finzcoin/src/leveldb/include/leveldb/db.h \
- /home/finzcoin/src/leveldb/include/leveldb/iterator.h \
- /home/finzcoin/src/leveldb/include/leveldb/slice.h \
- /home/finzcoin/src/leveldb/include/leveldb/status.h \
- /home/finzcoin/src/leveldb/include/leveldb/options.h \
- /home/finzcoin/src/leveldb/include/leveldb/write_batch.h init.h wallet.h \
- ui_interface.h walletdb.h db.h
+ /home/working/finzcoin/src/leveldb/include/leveldb/db.h \
+ /home/working/finzcoin/src/leveldb/include/leveldb/iterator.h \
+ /home/working/finzcoin/src/leveldb/include/leveldb/slice.h \
+ /home/working/finzcoin/src/leveldb/include/leveldb/status.h \
+ /home/working/finzcoin/src/leveldb/include/leveldb/options.h \
+ /home/working/finzcoin/src/leveldb/include/leveldb/write_batch.h init.h \
+ wallet.h ui_interface.h walletdb.h db.h
 rpcrawtransaction.cpp base58.h bignum.h :
  serialize.h allocators.h version.h clientversion.h uint256.h key.h :
  util.h netbase.h compat.h script.h keystore.h crypter.h sync.h :
@@ -31,10 +31,10 @@ rpcrawtransaction.cpp base58.h bignum.h :
  zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h :
  zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h :
  zerocoin/../uint256.h zerocoin/ParamGeneration.h :
- /home/finzcoin/src/leveldb/include/leveldb/db.h :
- /home/finzcoin/src/leveldb/include/leveldb/iterator.h :
- /home/finzcoin/src/leveldb/include/leveldb/slice.h :
- /home/finzcoin/src/leveldb/include/leveldb/status.h :
- /home/finzcoin/src/leveldb/include/leveldb/options.h :
- /home/finzcoin/src/leveldb/include/leveldb/write_batch.h init.h wallet.h :
- ui_interface.h walletdb.h db.h :
+ /home/working/finzcoin/src/leveldb/include/leveldb/db.h :
+ /home/working/finzcoin/src/leveldb/include/leveldb/iterator.h :
+ /home/working/finzcoin/src/leveldb/include/leveldb/slice.h :
+ /home/working/finzcoin/src/leveldb/include/leveldb/status.h :
+ /home/working/finzcoin/src/leveldb/include/leveldb/options.h :
+ /home/working/finzcoin/src/leveldb/include/leveldb/write_batch.h init.h :
+ wallet.h ui_interface.h walletdb.h db.h :

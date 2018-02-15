@@ -40,8 +40,8 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 2 * 60; // 1 minute
-unsigned int nStakeMinAge = 8 * 60 * 60;
+unsigned int nTargetSpacing = 1 * 60; // 1 minute
+unsigned int nStakeMinAge = 1 * 60 * 60;
 unsigned int nStakeMaxAge = -1; // unlimited
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
@@ -1005,7 +1005,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 
             if(nBestHeight == 0)
             {
-            nSubsidy = 16800000 * COIN;
+            nSubsidy = 2880000 * COIN;
             }
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -2538,9 +2538,9 @@ bool LoadBlockIndex(bool fAllowNew)
         //    CTxOut(empty)
         //  vMerkleTree: 12630d16a9
 
-        const char* pszTimestamp = "ncr is started to 20 nov 2017";
+        const char* pszTimestamp = "finzcoin is started to 15 feb 2018";
         CTransaction txNew;
-        txNew.nTime = 1511443348;
+        txNew.nTime = 1518718447;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2550,9 +2550,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1511443348;
+        block.nTime    = 1518718447;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 1217270 : 1217270;
+        block.nNonce   = !fTestNet ? 398969 : 398969;
         
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2578,7 +2578,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
                 
-        assert(block.hashMerkleRoot == uint256("0xefdd13d35b115bb3fe18fb132742537248a339001f87c506c80f62a6fbdf5bf9"));
+        assert(block.hashMerkleRoot == uint256("0xc873b075ce95bfc877e4d1d5fc9571053d6ff3b0417ef6f9f51866f8dea5e0cc"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 
